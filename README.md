@@ -117,6 +117,17 @@ The result is displayed to the user through the web interface.
 
 ---
 
+## Screenshots
+
+Home Page
+
+<img width="1918" height="1087" alt="image" src="https://github.com/user-attachments/assets/2a289895-e4c1-4f52-9ea2-005a1784d53d" />
+
+Prediction Example
+
+<img width="1918" height="1025" alt="image" src="https://github.com/user-attachments/assets/585e7aed-7dee-4202-9473-a4be24d8e5f0" />
+
+---
 ## Challenges Faced
 
 ### Maintaining Preprocessing Consistency
