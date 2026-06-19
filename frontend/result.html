@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="main-heading">Flood Prediction Result</h1>
+    <div class="container">
+        <h2>{{ prediction }}</h2>
+
+        <!-- Description of Risk Levels -->
+        <div class="risk-description">
+            <h3>What does this mean?</h3>
+            <p>
+                <strong>Low Risk (0.0 - 0.4):</strong>
+                The likelihood of flooding is minimal. Conditions are generally safe, but it's always good to stay informed about weather updates.
+            </p>
+            <p>
+                <strong>Medium Risk (0.4 - 0.7):</strong>
+                There is a moderate chance of flooding. Be cautious, especially if you are in a flood-prone area. Monitor local weather alerts and prepare for possible flooding.
+            </p>
+            <p>
+                <strong>High Risk (0.7 - 1.0):</strong>
+                The risk of flooding is high. Immediate action is recommended. Follow evacuation orders if issued, and move to higher ground if necessary. Stay tuned to emergency broadcasts.
+            </p>
+        </div>
+
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>

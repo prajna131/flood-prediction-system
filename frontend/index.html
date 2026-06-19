@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="main-heading">Flood Prediction</h1>
+
+    <div class="container">
+        <h2>Real-Time Flood Prediction</h2>
+        <div class="scrollable-form">
+            <form action="/predict" method="post">
+                <label>Rainfall Range (mm):</label>
+                <select name="rainfall_range">
+                    <option value="50-100">50-100</option>
+                    <option value="100-200">100-200</option>
+                    <option value="200-300">200-300</option>
+                </select>
+
+                <label>Number of Rainy Days:</label>
+                <input type="number" name="num_rainy_days" required>
+
+                <label>River Flow (m³/s):</label>
+                <input type="number" name="river_flow" step="0.1" required>
+
+                <label>Soil Moisture:</label>
+                <input type="number" name="soil_moisture" step="0.01" required>
+
+                <label>Humidity (%):</label>
+                <input type="number" name="humidity" step="0.1" required>
+
+                <label>Temperature (°C):</label>
+                <input type="number" name="temperature" step="0.1" required>
+
+                <label>Drainage Capacity (%):</label>
+                <input type="number" name="drainage_capacity" step="0.1" required>
+
+                <label>Urbanization Index:</label>
+                <input type="number" name="urbanization_index" step="0.1" required>
+
+                <label>Deforestation Index:</label>
+                <input type="number" name="deforestation_index" step="0.1" required>
+
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
