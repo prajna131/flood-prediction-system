@@ -125,7 +125,7 @@ Home Page
 
 Prediction Example
 
-<img width="1918" height="1025" alt="image" src="https://github.com/user-attachments/assets/585e7aed-7dee-4202-9473-a4be24d8e5f0" />
+<img width="1918" height="1087" alt="image" src="https://github.com/user-attachments/assets/c630023e-49ca-4c4b-bcda-b02bf7df72a1" />
 
 ---
 ## Challenges Faced
